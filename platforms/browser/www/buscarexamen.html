@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Examenes </title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="css/materialize.css">
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="js/materialize.js"></script>
+    <script src="js/materialize.min.js"></script>
+    <link rel="stylesheet" href="css/index.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script type="text/javascript" charset="utf-8" src = "js/busqueda.js"></script>
+        
+
+
+
+</head>
+
+<body style="background-color:#E0F2F7">
+
+
+    <nav>
+        <div class="nav-wrapper" style="background-color:#4489AB">
+            <a href="#" class="brand-logo left">Buscar Examen</a>
+            <ul id="nav-mobile" class="right">
+                <li><a href="menuPrincipal.html" class="hide-on-med-and-down">Inicio</a></li>
+                <li><a href="javascript:history.back()">Anterior</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="row">
+            <div class="input-field col s6 ">
+                <i class="material-icons prefix">input</i>
+                <input id="urlExam" type="tel" class="validate">
+                <label for="urlExam">Ingresar URL</label>
+            </div>
+        </div>
+        <div class="row">
+            <button id="btn_preguntas" class="btn waves-effect.waves-red  waves-light" onclick="setNumExam()">Buscar Examenes </button>
+        </div>
+
+        <div class="container" id="preguntas">
+
+        </div>
+        <div class="container" id="Botones">
+            <button id="btn_prueba" class="btn light-green darken-1 waves-effect waves-light" onclick="evaluar()">Probar Examen </button>
+            <button id="btn_calificar" class="btn indigo accent-4 waves-effect waves-light" onclick="setNumExam()">Responder Examen </button>
+        </div>
+    </div>
+
+    <footer class="page-footer" style="background-color:#5882FA">
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s12">
+                    <h5 class="white-text">Instructivo</h5>
+                    <li class="grey-text text-lighten-4">Presiona en buscar exámenes</li>
+                    <li class="grey-text text-lighten-4">Escoge uno de los que aparecen en la lista</li>
+                    <li class="grey-text text-lighten-4">Presiona en el boton de consultar</li>
+                    <li class="grey-text text-lighten-4">Responde el exámen</li>
+                    <li class="grey-text text-lighten-4">Prueba el examen o envialo para calificación</li>
+                </div>
+                <div class="col l4 offset-l2 s12">
+                    <h5 class="white-text">Un desarrollo de </h5>
+                    <ul>
+                        <li><a class="grey-text text-lighten-3" href="https://github.com/Mutisantos">Esteban Hernández</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#!">Daniel Calambas</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#!">Jaime Mendoza</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright" style="background-color:#2E2EFE">
+            <div class="container">
+                Potenciado por CSSMaterialize©
+                <a class="grey-text text-lighten-4 right" href="http://materializecss.com/">Materialize</a>
+            </div>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>

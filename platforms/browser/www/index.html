@@ -1,0 +1,63 @@
+<head>
+    <title>EvalTiGeo - Sistema de Evaluaciones Georreferenciadas</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="css/materialize.css">
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/index.css">
+
+    <script type="text/javascript" charset="utf-8" src="cordova.js"></script>
+    <script type="text/javascript" charset="utf-8" src="js/loaduser.js"></script>
+</head>
+
+<body>
+    <nav>
+        <div class="nav-wrapper" style="background-color:#4489AB">
+            <a href="#" class="brand-logo">EvalTi-Iniciar Sesión</a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a href="javascript:history.back()">Anterior</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <h4>Ingrese su usuario y contraseña</h4>
+        <ul class="pagination">
+            <form action="">
+                Usuario:
+                <br>
+                <input name="u" id="u" type="text">
+                <br> Contraseña:
+                <br>
+                <input name="c" id="c" type="password">
+            </form>
+            <button class="btn waves-effect red darken-4" onclick="comprobarUsuario()">Ingresar</button>
+            <a class="grey-text text-lighten-3" href="nuevoUsuario.html">Nuevo usuario</a>
+        </ul>
+
+    </div>
+    <footer class="page-footer" style="background-color:#5882FA">
+        <div class="container">
+            <div class="row">
+                <div class="col l4 offset-l2 s12">
+                    <h5 class="white-text">Un desarrollo de </h5>
+                    <ul>
+                        <li><a class="grey-text text-lighten-3" href="https://github.com/Mutisantos">Esteban Hernández</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#!">Daniel Calambas</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#!">Jaime Mendoza</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright" style="background-color:#2E2EFE">
+            <div class="container">
+                Potenciado por CSSMaterialize©
+                <a class="grey-text text-lighten-4 right" href="http://materializecss.com/">Materialize</a>
+            </div>
+        </div>
+    </footer>
+</body>

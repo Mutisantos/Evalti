@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Geolocation</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+        <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="css/materialize.css">
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script type="text/javascript" charset="utf-8" src="js/materialize.js"></script>
+    <script type="text/javascript" charset="utf-8" src="cordova.js"></script>
+    <script type="text/javascript" charset="utf-8" src="js/coordenadas.js"></script>
+
+</head>
+
+<body onload="loaded()">
+    <nav>
+        <div class="nav-wrapper" style="background-color:#4489AB">
+            <a href="#" class="left brand-logo"> GPS</a>
+            <ul id="nav-mobile" class="right">
+                <li><a href="javascript:history.back()">Anterior</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h4 id="geolocation" class="center-align">Buscando geolocalizacion...</h4>
+        <div class="row">
+            <p id="Long" class="col s12 m6 l6 card-panel light-blue accent-1 center-align">X</p>
+            <p id="Lati" class="col s12 m6 l6 card-panel light-blue accent-2 center-align">Y</p>
+            <p id="Time" class="col s12 m12 l12 card-panel light-blue accent-3 center-align">Timestamp</p>
+        </div>
+        <button onclick="loaded()" class="btn waves-effect light-green center-align">Buscar</button>
+    </div>
+    <div class="divider"></div>
+    <div class="container" id="preguntas">
+
+    </div>
+
+    <div class="container">
+        <div class="row" id="Botones">
+            <button id="btn_prueba" class="btn waves-effect.waves-red  waves-light" onclick="evaluarlocal()" style="visibility:hidden">Probar Examen </button>
+            <button id="btn_calificar" class="btn waves-effect waves-light" onclick="evaluarAbsoluto()" style="visibility:hidden">Responder Examen </button>
+        </div>
+        <img src="" id="myImage" height="600px" width="600px"/>
+    </div>
+
+
+    <footer class="page-footer indigo darken-4">
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s12">
+                    <h5 class="white-text">Instructivo</h5>
+                    <li class="grey-text text-lighten-4">Busca un edificio donde hayan examenes por hacer</li>
+                    <li class="grey-text text-lighten-4">Responde el examen</li>
+                    <li class="grey-text text-lighten-4">Prueba el examen o envialo para calificación</li>
+                </div>
+                <div class="col l4 offset-l2 s12">
+                    <h5 class="white-text">Un desarrollo de </h5>
+                    <ul>
+                        <li><a class="grey-text text-lighten-3" href="https://github.com/Mutisantos">Esteban Hernández</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#!">Daniel Calambas</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#!">Jaime Mendoza</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright indigo">
+            <div class="container">
+                Potenciado por CSSMaterialize©
+                <a class="grey-text text-lighten-4 right" href="http://materializecss.com/">Materialize</a>
+            </div>
+        </div>
+        <div>
+            <iframe id="iframe" class="hide" src='json/json.txt' style="visibility:hidden" onload="leerarchivo()"> </iframe>
+        </div>
+    </footer>
+</body>
+
+</html>

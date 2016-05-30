@@ -1,0 +1,84 @@
+{
+	"exa_num1": {
+		"exa_numero": 1,
+		"exa_autor": "Profesor Jirafales",
+		"exa_tema": "Tribus Mexicanas",
+		"exa_materia": "Historia",
+		"exa_cantpregs": 3
+	},
+	"exa_num1preg_num1": {
+		"preg_explicacion": "Fue Hernán Cortés, Alberto Cortés es un cantante, Julio Alemán y Mauricio Garcés son actores",
+		"preg_valor": 0.5,
+		"preg_numero": 1,
+		"preg_value": 2,
+		"preg_enunciado": "¿Quién fue el conquistador de México?",
+		"preg_opcion1": "Alberto Cortés",
+		"preg_opcion2": "Hernán Cortés",
+		"preg_opcion3": "Julio Alemán ",
+		"preg_opcion4": "Mauricio Garcés"
+	},
+
+	"exa_num1preg_num2": {
+		"preg_explicacion": "Los aztecas, el resto no son siquiera tribus",
+		"preg_valor": 1,
+		"preg_numero": 2,
+		"preg_value": 3,
+		"preg_enunciado": "¿Cuál de las siguientes fue una de las tribus que habitó el valle de México?",
+		"preg_opcion1": "Los Discotecas",
+		"preg_opcion2": "Los Bibliotecas",
+		"preg_opcion3": "Los Aztecas",
+		"preg_opcion4": "Los Karatecas"
+	},
+	"exa_num1preg_num3": {
+		"preg_explicacion": "La guerra, estamos hablando de la civilización azteca, no del estadio azteca",
+		"preg_valor": 1,
+		"preg_numero": 3,
+		"preg_value": 2,
+		"preg_enunciado": "¿Cuál era la principal actividad del Azteca?",
+		"preg_opcion1": "Los partidos de fútbol",
+		"preg_opcion2": "La guerra",
+		"preg_opcion3": "La cerveza",
+		"preg_opcion4": "Todas las anteriores"
+	},
+	"exa_num2": {
+		"exa_numero": 2,
+		"exa_autor": "Ron Damón",
+		"exa_tema": "Varios",
+		"exa_materia": "Varios",
+		"exa_cantpregs": 4
+	},
+	"exa_num2preg_num1": {
+		"preg_explicacion": "Un touchdown vale 6 puntos, el gol de campo solo vale 1",
+		"preg_valor": 1,
+		"preg_numero": 1,
+		"preg_value": 1,
+		"preg_enunciado": "Que vale más, ¿Un gol de campo o un touchdown?",
+		"preg_opcion1": "Un touchdown",
+		"preg_opcion2": "Un gol de campo",
+		"preg_opcion3": "Valen lo mismo",
+		"preg_opcion4": "Depende del partido"
+	},
+
+	"exa_num2preg_num2": {
+		"preg_explicacion": "Es una señal de peligro",
+		"preg_valor": 1,
+		"preg_numero": 2,
+		"preg_value": 3,
+		"preg_enunciado": "¿Qué significa una calavera en términos de seguridad?",
+		"preg_opcion1": "Una bandera pirata",
+		"preg_opcion2": "El anuncion de un cementerio",
+		"preg_opcion3": "PELIGRO",
+		"preg_opcion4": "Ninguna de las anteriores"
+	},
+	"exa_num2preg_num3": {
+		"preg_explicacion": "Es veneno, te envenenas",
+		"preg_valor": 1,
+		"preg_numero": 3,
+		"preg_value": 1,
+		"preg_enunciado": "¿Qué pasaría si bebes una botella etiquetada con una calavera?",
+		"preg_opcion1": "Te envenenas",
+		"preg_opcion2": "Te despiertas",
+		"preg_opcion3": "Te vuelves invisible",
+		"preg_opcion4": "Todas las anteriores"
+	}
+}

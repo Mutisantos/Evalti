@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Acelerometro</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <script type="text/javascript" charset="utf-8" src="cordova.js"></script>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+    <script>
+        //first we want to wait for PhoneGap to load
+        document.addEventListener("deviceready", loaded, false)
+            //PhoneGap is loaded
+        function loaded() {
+            navigator.accelerometer.getCurrentAcceleration(onSuccess, onError);
+        }
+
+        //Get the current Acceleration data if Successful
+        function onSuccess(acceleration) {
+            document.getElementById("varx").innerHTML = acceleration.x + " en X";
+            document.getElementById("vary").innerHTML = acceleration.y + " en Y";
+            document.getElementById("varz").innerHTML = acceleration.z + " en Z";
+            document.getElementById("time").innerHTML = acceleration.timestamp + " Timestamp";
+
+
+            // alert('Acceleration X: ' + acceleration.x + '\n' + 'Acceleration Y: ' + acceleration.y + '\n' + 'Acceleration Z: ' + acceleration.z + '\n' + 'Timestamp: ' + acceleration.timestamp + '\n');
+
+        }
+
+        // alert if there is an error
+        function onError() {
+            alert("Error");
+        }
+
+        function linker() {
+            location.href = "index2.html";
+        };
+
+        function returner() {
+            location.href = "index.html";
+        }
+    </script>
+</head>
+
+<body style="background-color:#111111">
+    <div class="container-fluid" style="color:white;">
+        <h1>Acelerometro</h1>
+        <p>Datos del acelerometro
+        </p>
+        <div class="row">
+            <div id="varx" class="col-sm-6" style="background-color:lavender; color: black;">X</div>
+            <div id="vary" class="col-sm-6" style="background-color:#111111; color:white;">Y</div>
+            <div id="varz" class="col-sm-6" style="background-color:#111111; color:white;">Z</div>
+            <div id="time" class="col-sm-6" style="background-color:lavender; color: black;">Timestamp</div>
+        </div>
+        <button class="btn-default.active" onclick="loaded()">Actualizar</button>
+        <button onclick="linker()">Siguiente</button>
+        <button onclick="returner()">Indice</button>
+
+    </div>
+
+</body>
+
+</html>

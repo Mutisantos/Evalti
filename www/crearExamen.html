@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Examenes </title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="css/materialize.css">
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="js/materialize.js"></script>
+    <script src="js/materialize.min.js"></script>
+    <script type="text/javascript" charset="utf-8" src="cordova.js"></script>
+    <script type="text/javascript" charset="utf-8" src= "js/cargar.js"></script>
+
+
+
+</head>
+
+<body style="background-color:#C9C2A2">
+
+
+    <nav>
+        <div class="nav-wrapper deep-orange darken-4">
+            <a href="#" class="brand-logo left">Crear Examen</a>
+            <ul id="nav-mobile" class="right">
+                <li><a href="menuPrincipal.html">Inicio</a></li>
+                <li><a href="javascript:history.back()">Anterior</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="row">
+        <form class="col s12">
+            <div class="row">
+                <div class="input-field col 4 s6">
+                    <input class="validate exam" id="numExam" type="number" required>
+                    <label for="numExam">NumExamen</label>
+                </div>
+                <div class="input-field col 4 s6">
+                    <input id="autorExam" class="validate exam" type="text" required>
+                    <label for="autorExam">Autor</label>
+                </div>
+                <div class="input-field col 4 s6">
+                    <input id="matExam" class="validate exam" type="text" required>
+                    <label for="matExam">Materia</label>
+                </div>
+                <div class="input-field col 4 s6">
+                    <input id="temaExam" class="validate exam" type="text" required>
+                    <label for="temaExam">Tema(s)</label>
+                </div>
+                <div class="input-field col 4 s6">
+                    <input id="cantExam" class="validate exam" type="number" required>
+                    <label for="cantExam">Cantidad de Preguntas</label>
+                </div>
+            </div>
+        </form>
+        <div class="input-field col 4 s12">
+            <button class="btn waves-effect orange" id="finExam" onclick="agregarPregunta()">
+                <span class="condensed black-text text-darken-4"> Generar </span>
+        </div>
+    </div>
+
+    <div class="container" id="preguntas">
+
+    </div>
+
+    <div class="container" id="Botones">
+        <button id="btn_agregar" class="btn waves-effect.waves-red  waves-light" onclick="generarJSON()" style="visibility:hidden">Agregar Pregunta </button>
+        <button id="btn_finalizar" class="btn waves-effect waves-light" onclick="limpiarStorage()" style="visibility:hidden">Limpiar Registros </button>
+    </div>
+
+
+    <footer class="page-footer deep-orange darken-4">
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s12">
+                    <h5 class="white-text">Instructivo</h5>
+                    <li class="grey-text text-lighten-4">Presiona en buscar exámenes</li>
+                    <li class="grey-text text-lighten-4">Escoge uno de los que aparecen en la lista</li>
+                    <li class="grey-text text-lighten-4">Presiona en el boton de consultar</li>
+                    <li class="grey-text text-lighten-4">Responde el exámen</li>
+                    <li class="grey-text text-lighten-4">Prueba el examen o envialo para calificación</li>
+                </div>
+                <div class="col l4 offset-l2 s12">
+                    <h5 class="white-text">Un desarrollo de </h5>
+                    <ul>
+                        <li><a class="grey-text text-lighten-3" href="https://github.com/Mutisantos">Esteban Hernández</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#!">Daniel Calambas</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#!">Jaime Mendoza</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright orange darken-3">
+            <div class="container">
+                Potenciado por CSSMaterialize©
+                <a class="grey-text text-lighten-4 right" href="http://materializecss.com/">Materialize</a>
+            </div>
+        </div>
+    </footer>
+    <audio id="audio2">
+        <source src="sounds/bark.wav" type="audio/wav">
+    </audio>
+
+</body>
+
+</html>
